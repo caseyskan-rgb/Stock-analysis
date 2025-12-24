@@ -42,9 +42,9 @@ import copy
 
 # --- SEC API Configuration ---
 # The SEC requires a User-Agent header for all API requests.
-# Please replace 'YOUR_EMAIL@example.com' with your actual email address.
 HEADERS = {
-    'User-Agent': 'ProvidenceCollege / CaseyKenan Finance Project (caseyskan@gmail.com)'
+    'User-Agent': 'StockAnalysisResearch/1.0 (contact: github.com/caseyskan-rgb)'
+    
 }
 RISK_FREE_RATE = 0.04          # 4% risk-free rate (e.g., 10-year U.S. Treasury)
 EQUITY_RISK_PREMIUM = 0.055    # 5.5% equity market risk premium
