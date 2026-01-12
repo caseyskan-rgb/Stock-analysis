@@ -816,17 +816,27 @@ TECH_RED = [ #late risk watcher
 #   - Compute CAGR, margins, ROIC, FCF growth, stability metrics
 #   - Inputs are normalized, year-keyed data ONLY
 #
-#7. Valuation multiple computation
+#7. Market Data & Price Fetching
+#   - Fecthes current and past market price data for evaluation
+#
+#8. Price Trend & Technical Scoring
+#   - Computes technical price metrics to determine momentum and trend for each stock
+#   - Technical Scoring BEFORE regime conditioned weighting
+#
+#9. Valuation multiple computation
 #   - Compute EV/EBITDA, P/FCF, P/S, etc.
 #   - Exclude negative EBITDA values
 #
-#8. Benchmark normalization
+#10. Benchmark Normalization (Relative Valuation Context)
 #   - Normalize metrics relative to index/sector/sub-industry benchmarks
 #
-#9. Regime-conditioned weighting
+#11. Score Normalization & Calibration (0–100)
+#   - Scales the price-trend score and the benchmark-trend score out of 100
+#
+#12. Regime-conditioned weighting
 #   - Apply bull/bear regime weights to growth, valuation, stability metrics
 #
-#10. Composite scoring, ranking, and final exports
+#13. Composite scoring, ranking, and final exports
 #    - Combine scores, rank stocks
 #   - Export final tables/CSVs/Excel outputs
 #
